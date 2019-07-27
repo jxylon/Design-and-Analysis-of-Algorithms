@@ -27,6 +27,7 @@ int main(void)
 	scanf("%ld %ld",&m,&n);
 	time_star=time(NULL);
 	t=min(m,n);
+	// 求最大公约数
 	result=gcd(m,n,t);
 	time_end=time(NULL);
 	printf("gcd=%ld\ntime=%.1f\n",result,difftime(time_star,time_end));
